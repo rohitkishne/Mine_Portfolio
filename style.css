@@ -1,0 +1,344 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Encode Sans', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'M PLUS 1', sans-serif;
+    font-family: 'PT Serif', serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.heading{
+    border-bottom: 5px solid brown;
+    width: 25%;
+    text-align: center;
+    background: rgba(31,26,89,0.1);
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-left: inset;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Navbar Styling */
+.navbar{
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 1000;
+    background-color: #f2fbf6;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.left{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.left img{
+    height: 35px;
+}
+
+
+.right{
+    width: 70%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right > a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* video section */
+#devVideo{
+    height: 400px;
+}
+
+#devVideo > h1{
+    position: absolute;
+    z-index: 1;
+}
+
+#devMedia{
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0px;
+}
+
+/* Home Section Styling */
+#home{
+
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 400px;
+    left: 0px;
+    right: 0px;
+    border-bottom: 1px solid black;
+    background-color: #f3efef;
+}
+.designation{
+    position: relative;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.designation > img{
+    height: 300px;
+    width: 334px;
+}
+.designation > h1{
+    position: absolute;
+    top: 210px;
+    left: 50px;
+    font-size: 18px;
+}
+
+.designation span{
+    color: #0191ff;
+}
+.designation > h3{
+    position: absolute;
+    top: 250px;
+    left: 53px;
+    font-size: 13px;
+}
+.designation > img{
+    filter: contrast(0.9);
+}
+.developerLogo{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.developerLogo > img{
+    height: 300px;
+}
+
+/* About us Section */
+#about{
+    position: absolute;
+    top: 801px;
+    right: 0px;
+    left: 0px;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: azure;
+    border-bottom: 1px solid black;
+}
+
+.image{
+    width: 21%;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    height: 75%;
+    display: flex;
+}
+
+.image > img{
+    border-radius: 150px;
+}
+.about{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.about p{
+    width: 70%;
+    text-align: justify;
+}
+
+#education, tr, th, td{
+    border: 1px solid maroon;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+    background-color: khaki;
+}
+
+.education{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Skill section */
+#skills{
+    position: absolute;
+    top: 1202px;
+    right: 0px;
+    left: 0px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #edeae3;
+    gap: 50px;
+    padding: 30px;
+    border-bottom: 2px solid black;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    grid-gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.skills p{
+    height: 50px;
+    width: 200px;
+    background-color: #8bb4f6;
+    border-bottom: 10px solid rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    padding-top: 7px;
+    font-weight: bold;
+    color: #212723;
+    border-right: 10px solid rgba(0,0,0,0.5);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Project section */
+#projects{
+    position: absolute;
+    top: 1551px;
+    right: 0px;
+    left: 0px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #e1ebef;
+    gap: 50px;
+    padding: 30px;
+    border-bottom: 1px solid black;
+}
+
+.project-link{
+    text-decoration: none;
+    color: white;
+}
+
+.tech-stack h6 {
+    background-color: #f1f3f4;
+    padding: 5px;
+}
+
+/* Contact Section */
+#contact{
+    position: absolute;
+    top: 2101px;
+    right: 0px;
+    left: 0px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    background-color: #e1ebef;
+    gap: 50px;
+}
+.contact-heading{
+    display: flex;
+    gap: 45%;
+    padding: 0px 30px;
+    padding-top: 30px;
+}
+.contact-heading div{
+    border-bottom: 2px solid brown;
+}
+.contact-details{
+    display: flex;
+    justify-content: flex-start;
+    gap: 100px;
+    padding: 0px 30px;
+}
+
+.contact-details .personal-details{
+    display: flex;
+    flex-direction: column;
+}
+.email-id, .contact-no{
+    display: flex;
+    gap: 15px;
+}
+
+.social-detail{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.social-detail svg{
+    height: 40px;
+}
+
+.linkedin svg path{
+    color: blue;
+}
+.github svg path{
+    color: black;
+}
+.linkedin svg path{
+    color: blue;
+}
+
+.copyright-btn{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    width: 100%;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    color: white; 
+}
+.copyright{
+    display: flex;
+    gap: 5px;
+    width: 50%;
+    align-items: center;
+}
+
+.buttons:hover{
+    background-color: darkblue;
+    outline: groove;
+    color: lime;
+}
+
